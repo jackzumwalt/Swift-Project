@@ -507,6 +507,7 @@
 				2318BE591E0CEA0700E80E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2318BE5A1E0CEA0700E80E75 /* Build configuration list for PBXNativeTarget "Swift ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				2318BE5C1E0CEA0700E80E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2318BE5D1E0CEA0700E80E75 /* Build configuration list for PBXNativeTarget "Swift ProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +525,7 @@
 				2318BE5F1E0CEA0700E80E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
