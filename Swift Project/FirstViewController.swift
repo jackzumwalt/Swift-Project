@@ -18,20 +18,21 @@ class FirstViewController: UIViewController {
     var mapView: GMSMapView!
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 15.0
-
+    
     // Initialize the location manager and GMSPlacesClient in viewDidLoad().
     override func viewDidLoad() {
+        super.viewDidLoad()
         locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
         locationManager.distanceFilter = 50
         locationManager.startUpdatingLocation()
         locationManager.delegate = self
-        
         placesClient = GMSPlacesClient.shared()
         
         // Create a map and add it to the view in viewDidLoad().
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 48.857165, longitude: 2.354613, zoom: 8.0)
+        
         mapView = GMSMapView.map(withFrame: view.bounds, camera: camera)
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
@@ -60,6 +61,7 @@ class FirstViewController: UIViewController {
                 for likelihood in likelihoodList.likelihoods {
                     let place = likelihood.place
                     
+                    // Add markers for nearby places.
                     let marker = GMSMarker(position: place.coordinate)
                     marker.title = place.name
                     marker.snippet = place.formattedAddress
