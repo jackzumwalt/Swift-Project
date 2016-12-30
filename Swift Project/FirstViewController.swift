@@ -19,6 +19,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 15.0
     
+    
     // Initialize the location manager and GMSPlacesClient in viewDidLoad().
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +29,25 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         locationManager.distanceFilter = 50
         locationManager.startUpdatingLocation()
         locationManager.delegate = self
+        
         placesClient = GMSPlacesClient.shared()
         
         // Create a map and add it to the view in viewDidLoad().
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 48.857165, longitude: 2.354613, zoom: 8.0)
         
         mapView = GMSMapView.map(withFrame: view.bounds, camera: camera)
+        
+        do {
+            // Set the map style by passing the URL of the local file.
+            if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json") {
+                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+            } else {
+                NSLog("Unable to find style.json")
+            }
+        } catch {
+            NSLog("One or more of the map styles failed to load. \(error)")
+        }
+        
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -43,20 +57,13 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         mapView.isHidden = true
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        
-        self.mapView = GMSMapView(frame: self.mapView.frame)
-        self.view.addSubview(self.mapView)
-    }
-    
+    // Search button
     @IBAction func getPlace(_ sender: Any) {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.delegate = self
         self.present(searchController, animated: true, completion: nil)
     }
-    
-    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -132,7 +139,6 @@ extension FirstViewController: CLLocationManagerDelegate {
     }
     
 }
-    
 
 
 

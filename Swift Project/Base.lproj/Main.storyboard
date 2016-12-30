@@ -120,7 +120,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="iBq-Lv-pmM">
                             <connections>
-                                <action selector="getPlace:" destination="YW5-LL-TWJ" id="TwH-C6-gQz"/>
+                                <action selector="getPlace:" destination="YW5-LL-TWJ" id="czD-cU-QI2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -142,7 +142,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y4R-TS-bIR" id="yde-wd-0cJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
