@@ -17,6 +17,15 @@
 		2318BE531E0CEA0700E80E75 /* Swift_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2318BE521E0CEA0700E80E75 /* Swift_ProjectUITests.swift */; };
 		23FF5D881E118B4D00D2DBA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2318BE301E0CEA0600E80E75 /* AppDelegate.swift */; };
 		23FF5D891E118BD400D2DBA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2318BE301E0CEA0600E80E75 /* AppDelegate.swift */; };
+		531A817A1E15C17900FC4C88 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A81791E15C17900FC4C88 /* SignupViewController.swift */; };
+		53605A5B1E16249B00F292F0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53605A591E16249B00F292F0 /* Realm.framework */; };
+		53605A5C1E16249B00F292F0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53605A5A1E16249B00F292F0 /* RealmSwift.framework */; };
+		53605A5D1E16249F00F292F0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53605A591E16249B00F292F0 /* Realm.framework */; };
+		53605A5E1E16249F00F292F0 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53605A591E16249B00F292F0 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53605A5F1E16249F00F292F0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53605A5A1E16249B00F292F0 /* RealmSwift.framework */; };
+		53605A601E16249F00F292F0 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53605A5A1E16249B00F292F0 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53A211D71E161FFE00EA2E52 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A211D31E161FEE00EA2E52 /* Realm.framework */; };
+		53A211D91E161FFE00EA2E52 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A211D41E161FEE00EA2E52 /* RealmSwift.framework */; };
 		EC3D190BB1CC0751A3B0AEA6 /* libPods-SwiftProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE896AAE0F8003BC55F28B5 /* libPods-SwiftProject.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +46,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		53A211DB1E161FFE00EA2E52 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				53605A601E16249F00F292F0 /* RealmSwift.framework in Embed Frameworks */,
+				53605A5E1E16249F00F292F0 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		01720F9C39187A5362C656E6 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		0FE896AAE0F8003BC55F28B5 /* libPods-SwiftProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +80,11 @@
 		2318BE541E0CEA0700E80E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26FB227B622FD635F34D66A0 /* Pods-SwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject.release.xcconfig"; sourceTree = "<group>"; };
 		434C4DFC9D08D92956CBC3E4 /* Pods_SwiftProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		531A81791E15C17900FC4C88 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		53605A591E16249B00F292F0 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		53605A5A1E16249B00F292F0 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		53A211D31E161FEE00EA2E52 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "/Users/AlexYu/Documents/Project1/Swift Project/Realm.framework"; sourceTree = "<absolute>"; };
+		53A211D41E161FEE00EA2E52 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "/Users/AlexYu/Documents/Project1/Swift Project/RealmSwift.framework"; sourceTree = "<absolute>"; };
 		ACB9DD75FAC4199EB7EA15B6 /* Pods_SwiftProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,6 +93,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53605A5D1E16249F00F292F0 /* Realm.framework in Frameworks */,
+				53605A5B1E16249B00F292F0 /* Realm.framework in Frameworks */,
+				53605A5F1E16249F00F292F0 /* RealmSwift.framework in Frameworks */,
+				53605A5C1E16249B00F292F0 /* RealmSwift.framework in Frameworks */,
+				53A211D71E161FFE00EA2E52 /* Realm.framework in Frameworks */,
+				53A211D91E161FFE00EA2E52 /* RealmSwift.framework in Frameworks */,
 				EC3D190BB1CC0751A3B0AEA6 /* libPods-SwiftProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,9 +149,12 @@
 				2318BE321E0CEA0600E80E75 /* FirstViewController.swift */,
 				2318BE341E0CEA0700E80E75 /* SecondViewController.swift */,
 				2318BE361E0CEA0700E80E75 /* Main.storyboard */,
+				531A81791E15C17900FC4C88 /* SignupViewController.swift */,
 				2318BE391E0CEA0700E80E75 /* Assets.xcassets */,
 				2318BE3B1E0CEA0700E80E75 /* LaunchScreen.storyboard */,
 				2318BE3E1E0CEA0700E80E75 /* Info.plist */,
+				53605A591E16249B00F292F0 /* Realm.framework */,
+				53605A5A1E16249B00F292F0 /* RealmSwift.framework */,
 			);
 			path = "Swift Project";
 			sourceTree = "<group>";
@@ -165,12 +203,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2318BE571E0CEA0700E80E75 /* Build configuration list for PBXNativeTarget "SwiftProject" */;
 			buildPhases = (
+				531A817E1E1618FF00FC4C88 /* ShellScript */,
 				6659F29C041EDEB279C25CDD /* [CP] Check Pods Manifest.lock */,
 				2318BE291E0CEA0600E80E75 /* Sources */,
 				2318BE2A1E0CEA0600E80E75 /* Frameworks */,
 				2318BE2B1E0CEA0600E80E75 /* Resources */,
 				4466B3BA0D1A363FF23D9B0E /* [CP] Embed Pods Frameworks */,
 				9C8B9410D439122B5E223563 /* [CP] Copy Pods Resources */,
+				53A211DB1E161FFE00EA2E52 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +347,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		531A817E1E1618FF00FC4C88 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+		};
 		6659F29C041EDEB279C25CDD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +399,7 @@
 			files = (
 				2318BE351E0CEA0700E80E75 /* SecondViewController.swift in Sources */,
 				2318BE311E0CEA0600E80E75 /* AppDelegate.swift in Sources */,
+				531A817A1E15C17900FC4C88 /* SignupViewController.swift in Sources */,
 				2318BE331E0CEA0600E80E75 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +559,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jackzumwalt/Library/Developer/Xcode/DerivedData/Swift_Project-gbhfspahlouabebcvujptjahpxpl/Build/Products/Debug-iphonesimulator/Pods_Swift_Project.framework",
+					RealmSwift.framework,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Swift\\ Project",
 				);
 				INFOPLIST_FILE = "Swift Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -525,6 +582,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jackzumwalt/Library/Developer/Xcode/DerivedData/Swift_Project-gbhfspahlouabebcvujptjahpxpl/Build/Products/Debug-iphonesimulator/Pods_Swift_Project.framework",
+					RealmSwift.framework,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Swift\\ Project",
 				);
 				INFOPLIST_FILE = "Swift Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
